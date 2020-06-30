@@ -65,7 +65,7 @@ keymap = {
     "(strike | strikethrough)": Key("cmd-shift-x"),
     "mark all read": Key("shift-esc"),
     "mark channel read": Key("esc"),
-    # "clear": [Key("cmd-a"), Key("backspace")],
+    "clear": [Key("cmd-a"), Key("backspace")],
     # Files and Snippets
     "upload": Key("cmd-u"),
     "snippet": Key("cmd-shift-enter"),
