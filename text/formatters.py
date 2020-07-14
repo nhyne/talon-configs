@@ -77,8 +77,8 @@ def FormatText(m):
 
 formatters = normalise_keys(
     {
-        "tree": (True, lambda i, word, _: word[0:3] if i == 0 else ""),
-        "quad": (True, lambda i, word, _: word[0:4] if i == 0 else ""),
+        # "tree": (True, lambda i, word, _: word[0:3] if i == 0 else ""),
+        # "quad": (True, lambda i, word, _: word[0:4] if i == 0 else ""),
         "(cram | camel)": (
             True,
             lambda i, word, _: word if i == 0 else word.capitalize(),
@@ -125,7 +125,7 @@ surrounders = normalise_keys(
         "brax": (False, Surround("[", "]")),
         "kirk": (False, Surround("{", "}")),
         "precoif": (False, Surround('("', '")')),
-        "prex": (False, Surround("(", ")")),
+        "(prex | prexy)": (False, Surround("(", ")")),
     }
 )
 
